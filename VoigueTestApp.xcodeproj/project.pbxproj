@@ -13,6 +13,7 @@
 		042974462789792B0065B7E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042974442789792B0065B7E5 /* Main.storyboard */; };
 		042974482789792D0065B7E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 042974472789792D0065B7E5 /* Assets.xcassets */; };
 		0429744B2789792D0065B7E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042974492789792D0065B7E5 /* LaunchScreen.storyboard */; };
+		2FC894E403CB7BA9988F6826 /* Pods_VoigueTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ADB8B6980A621F454DDF2A5 /* Pods_VoigueTestApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		042974472789792D0065B7E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0429744A2789792D0065B7E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0429744C2789792D0065B7E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8ADB8B6980A621F454DDF2A5 /* Pods_VoigueTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VoigueTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E705C0E58EFF09CB1BE4DE3A /* Pods-VoigueTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoigueTestApp.debug.xcconfig"; path = "Target Support Files/Pods-VoigueTestApp/Pods-VoigueTestApp.debug.xcconfig"; sourceTree = "<group>"; };
+		F6F768CE19525C19FAAD71E2 /* Pods-VoigueTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoigueTestApp.release.xcconfig"; path = "Target Support Files/Pods-VoigueTestApp/Pods-VoigueTestApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FC894E403CB7BA9988F6826 /* Pods_VoigueTestApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				0429743D2789792B0065B7E5 /* VoigueTestApp */,
 				0429743C2789792B0065B7E5 /* Products */,
+				2D19A13017F53C4F598D37E2 /* Pods */,
+				B835249778B57AB7BF16188C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +63,11 @@
 		0429743D2789792B0065B7E5 /* VoigueTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				0429745627897E260065B7E5 /* Managers */,
+				0429745527897E170065B7E5 /* Controllers */,
+				0429745427897E130065B7E5 /* View */,
+				0429745327897E0B0065B7E5 /* ViewModel */,
+				0429745227897E050065B7E5 /* Model */,
 				0429743E2789792B0065B7E5 /* AppDelegate.swift */,
 				042974402789792B0065B7E5 /* SceneDelegate.swift */,
 				042974422789792B0065B7E5 /* ViewController.swift */,
@@ -67,6 +79,58 @@
 			path = VoigueTestApp;
 			sourceTree = "<group>";
 		};
+		0429745227897E050065B7E5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0429745327897E0B0065B7E5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0429745427897E130065B7E5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0429745527897E170065B7E5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0429745627897E260065B7E5 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		2D19A13017F53C4F598D37E2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E705C0E58EFF09CB1BE4DE3A /* Pods-VoigueTestApp.debug.xcconfig */,
+				F6F768CE19525C19FAAD71E2 /* Pods-VoigueTestApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B835249778B57AB7BF16188C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8ADB8B6980A621F454DDF2A5 /* Pods_VoigueTestApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +138,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0429744F2789792D0065B7E5 /* Build configuration list for PBXNativeTarget "VoigueTestApp" */;
 			buildPhases = (
+				62E5B990FFE85CC23088F7EA /* [CP] Check Pods Manifest.lock */,
 				042974372789792B0065B7E5 /* Sources */,
 				042974382789792B0065B7E5 /* Frameworks */,
 				042974392789792B0065B7E5 /* Resources */,
+				F05979B35BB126799055060C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +198,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		62E5B990FFE85CC23088F7EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VoigueTestApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F05979B35BB126799055060C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VoigueTestApp/Pods-VoigueTestApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VoigueTestApp/Pods-VoigueTestApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VoigueTestApp/Pods-VoigueTestApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		042974372789792B0065B7E5 /* Sources */ = {
@@ -284,6 +392,7 @@
 		};
 		042974502789792D0065B7E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E705C0E58EFF09CB1BE4DE3A /* Pods-VoigueTestApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +421,7 @@
 		};
 		042974512789792D0065B7E5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6F768CE19525C19FAAD71E2 /* Pods-VoigueTestApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
