@@ -13,6 +13,10 @@
 		042974462789792B0065B7E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042974442789792B0065B7E5 /* Main.storyboard */; };
 		042974482789792D0065B7E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 042974472789792D0065B7E5 /* Assets.xcassets */; };
 		0429744B2789792D0065B7E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042974492789792D0065B7E5 /* LaunchScreen.storyboard */; };
+		0429745927897EBD0065B7E5 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0429745827897EBD0065B7E5 /* Coordinator.swift */; };
+		0429745B27897ED20065B7E5 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0429745A27897ED20065B7E5 /* Storyboard.swift */; };
+		0429745D27897F090065B7E5 /* MovieListMainNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0429745C27897F090065B7E5 /* MovieListMainNavigator.swift */; };
+		0429745F27897FFA0065B7E5 /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0429745E27897FFA0065B7E5 /* MovieListViewController.swift */; };
 		2FC894E403CB7BA9988F6826 /* Pods_VoigueTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ADB8B6980A621F454DDF2A5 /* Pods_VoigueTestApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +29,10 @@
 		042974472789792D0065B7E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0429744A2789792D0065B7E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0429744C2789792D0065B7E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0429745827897EBD0065B7E5 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		0429745A27897ED20065B7E5 /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
+		0429745C27897F090065B7E5 /* MovieListMainNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListMainNavigator.swift; sourceTree = "<group>"; };
+		0429745E27897FFA0065B7E5 /* MovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
 		8ADB8B6980A621F454DDF2A5 /* Pods_VoigueTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VoigueTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E705C0E58EFF09CB1BE4DE3A /* Pods-VoigueTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoigueTestApp.debug.xcconfig"; path = "Target Support Files/Pods-VoigueTestApp/Pods-VoigueTestApp.debug.xcconfig"; sourceTree = "<group>"; };
 		F6F768CE19525C19FAAD71E2 /* Pods-VoigueTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoigueTestApp.release.xcconfig"; path = "Target Support Files/Pods-VoigueTestApp/Pods-VoigueTestApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -71,7 +79,6 @@
 				0429743E2789792B0065B7E5 /* AppDelegate.swift */,
 				042974402789792B0065B7E5 /* SceneDelegate.swift */,
 				042974422789792B0065B7E5 /* ViewController.swift */,
-				042974442789792B0065B7E5 /* Main.storyboard */,
 				042974472789792D0065B7E5 /* Assets.xcassets */,
 				042974492789792D0065B7E5 /* LaunchScreen.storyboard */,
 				0429744C2789792D0065B7E5 /* Info.plist */,
@@ -96,6 +103,7 @@
 		0429745427897E130065B7E5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				042974442789792B0065B7E5 /* Main.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -103,6 +111,7 @@
 		0429745527897E170065B7E5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0429745E27897FFA0065B7E5 /* MovieListViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -110,8 +119,19 @@
 		0429745627897E260065B7E5 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				0429745727897E9B0065B7E5 /* NavigationManager */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		0429745727897E9B0065B7E5 /* NavigationManager */ = {
+			isa = PBXGroup;
+			children = (
+				0429745827897EBD0065B7E5 /* Coordinator.swift */,
+				0429745A27897ED20065B7E5 /* Storyboard.swift */,
+				0429745C27897F090065B7E5 /* MovieListMainNavigator.swift */,
+			);
+			path = NavigationManager;
 			sourceTree = "<group>";
 		};
 		2D19A13017F53C4F598D37E2 /* Pods */ = {
@@ -246,7 +266,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0429745927897EBD0065B7E5 /* Coordinator.swift in Sources */,
+				0429745D27897F090065B7E5 /* MovieListMainNavigator.swift in Sources */,
+				0429745B27897ED20065B7E5 /* Storyboard.swift in Sources */,
 				042974432789792B0065B7E5 /* ViewController.swift in Sources */,
+				0429745F27897FFA0065B7E5 /* MovieListViewController.swift in Sources */,
 				0429743F2789792B0065B7E5 /* AppDelegate.swift in Sources */,
 				042974412789792B0065B7E5 /* SceneDelegate.swift in Sources */,
 			);
@@ -403,7 +427,6 @@
 				INFOPLIST_FILE = VoigueTestApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -432,7 +455,6 @@
 				INFOPLIST_FILE = VoigueTestApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
