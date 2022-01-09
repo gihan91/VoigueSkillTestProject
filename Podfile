@@ -8,6 +8,7 @@ target 'VoigueTestApp' do
   pod 'RxCocoa', '6.2.0'
   pod 'Kingfisher', '~> 7.0'
   pod 'RxDataSources', '~> 5.0'
+  pod 'Alamofire', '~> 5.4'
 
   # Pods for VoigueTestApp
 

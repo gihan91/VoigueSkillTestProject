@@ -19,10 +19,10 @@ class MainNavigator: Coordinator {
     func start() {
         let vc = MovieListViewController.instantiateMain()
         vc.coordinator = self
-        vc.title = "MovieList"
+        vc.title = "FilmList"
         let appearance = UINavigationBarAppearance()
         appearance.configureWithOpaqueBackground()
-        appearance.backgroundColor = UIColor.red
+        appearance.backgroundColor = UIColor.navigationBarTopColor
         navigationController.navigationBar.standardAppearance = appearance
         navigationController.navigationBar.scrollEdgeAppearance = navigationController.navigationBar.standardAppearance
         navigationController.navigationBar.prefersLargeTitles = true
