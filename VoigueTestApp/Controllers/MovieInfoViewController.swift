@@ -12,25 +12,28 @@ import Kingfisher
 
 class MovieInfoViewController: UIViewController,Storyboard, UIScrollViewDelegate {
     
+    //MARK: - UI Outlets
     @IBOutlet weak var lblGenere: UILabel!
     @IBOutlet weak var lblMovieTitle: UILabel!
     @IBOutlet weak var lblMovieYear: UILabel!
     @IBOutlet weak var lblTime: UILabel!
     @IBOutlet weak var lblRatings: UILabel!
     @IBOutlet weak var imgMoviePoster: UIImageView!
-    
     @IBOutlet weak var lblActors: UILabel!
     @IBOutlet weak var lblWriter: UILabel!
     @IBOutlet weak var lblDirector: UILabel!
     @IBOutlet weak var lblPopularity: UILabel!
     @IBOutlet weak var lblScores: UILabel!
     @IBOutlet weak var lblDescription: UILabel!
+    
+    //MARK: - Variables
     var disposeBag = DisposeBag()
     var movieViewModel = MovieViewModel()
     weak var coordinator: MainNavigator?
     var movieTitleId: String?
     var movieInfo: MovieInfo?
     
+    // MARK: - Main Functions
     override func viewDidLoad() {
         super.viewDidLoad()
         self.getMovieInfo()
@@ -55,10 +58,6 @@ class MovieInfoViewController: UIViewController,Storyboard, UIScrollViewDelegate
             self.downloadImage(with: self.movieViewModel.moviePoster.value)
         }.disposed(by: disposeBag)
         
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-//        navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
     func downloadImage(`with` urlString : String){

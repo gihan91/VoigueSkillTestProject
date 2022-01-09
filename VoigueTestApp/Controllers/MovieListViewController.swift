@@ -11,12 +11,15 @@ import RxCocoa
 
 class MovieListViewController: UIViewController, Storyboard, UIScrollViewDelegate, UICollectionViewDelegateFlowLayout {
     
+    //MARK: - UI Outlets
     @IBOutlet weak var moviesCollection: UICollectionView!
     
+    //MARK: - Variables
     weak var coordinator: MainNavigator?
     var disposeBag = DisposeBag()
     var movieViewModel = MovieViewModel()
     
+    // MARK: - Main Functions
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupDelegates()
@@ -38,6 +41,10 @@ class MovieListViewController: UIViewController, Storyboard, UIScrollViewDelegat
     private func getMovieList() {
         self.movieViewModel.getMovieList().asObservable().subscribe { _ in }.disposed(by:disposeBag)
     }
+   
+}
+
+extension MovieListViewController {
     
     private func bindData() {
         movieViewModel.movieList.bind(to: moviesCollection.rx.items(cellIdentifier: "MoviewListCollectionViewCell", cellType: MoviewListCollectionViewCell.self)
@@ -65,6 +72,4 @@ class MovieListViewController: UIViewController, Storyboard, UIScrollViewDelegat
         {
            return CGSize(width: 160, height: 285)
         }
-    
-    
 }

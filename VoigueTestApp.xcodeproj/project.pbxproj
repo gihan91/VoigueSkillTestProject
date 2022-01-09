@@ -29,7 +29,6 @@
 		04630554278993FA004841F1 /* MoviewListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04630552278993FA004841F1 /* MoviewListCollectionViewCell.xib */; };
 		04630557278ABB63004841F1 /* ColorExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04630556278ABB63004841F1 /* ColorExtention.swift */; };
 		04630559278AC245004841F1 /* MovieInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04630558278AC245004841F1 /* MovieInfoViewController.swift */; };
-		0463055C278AC826004841F1 /* MainInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0463055A278AC826004841F1 /* MainInfoTableViewCell.swift */; };
 		0463055D278AC826004841F1 /* MainInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0463055B278AC826004841F1 /* MainInfoTableViewCell.xib */; };
 		2FC894E403CB7BA9988F6826 /* Pods_VoigueTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ADB8B6980A621F454DDF2A5 /* Pods_VoigueTestApp.framework */; };
 /* End PBXBuildFile section */
@@ -59,7 +58,6 @@
 		04630552278993FA004841F1 /* MoviewListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoviewListCollectionViewCell.xib; sourceTree = "<group>"; };
 		04630556278ABB63004841F1 /* ColorExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtention.swift; sourceTree = "<group>"; };
 		04630558278AC245004841F1 /* MovieInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInfoViewController.swift; sourceTree = "<group>"; };
-		0463055A278AC826004841F1 /* MainInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInfoTableViewCell.swift; sourceTree = "<group>"; };
 		0463055B278AC826004841F1 /* MainInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainInfoTableViewCell.xib; sourceTree = "<group>"; };
 		8ADB8B6980A621F454DDF2A5 /* Pods_VoigueTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VoigueTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E705C0E58EFF09CB1BE4DE3A /* Pods-VoigueTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoigueTestApp.debug.xcconfig"; path = "Target Support Files/Pods-VoigueTestApp/Pods-VoigueTestApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -145,7 +143,6 @@
 			isa = PBXGroup;
 			children = (
 				04630551278993FA004841F1 /* MoviewListCollectionViewCell.swift */,
-				0463055A278AC826004841F1 /* MainInfoTableViewCell.swift */,
 				0429745E27897FFA0065B7E5 /* MovieListViewController.swift */,
 				04630558278AC245004841F1 /* MovieInfoViewController.swift */,
 			);
@@ -388,7 +385,6 @@
 				04630559278AC245004841F1 /* MovieInfoViewController.swift in Sources */,
 				04630557278ABB63004841F1 /* ColorExtention.swift in Sources */,
 				042974432789792B0065B7E5 /* ViewController.swift in Sources */,
-				0463055C278AC826004841F1 /* MainInfoTableViewCell.swift in Sources */,
 				0463054E27899307004841F1 /* MovieViewModel.swift in Sources */,
 				0429745F27897FFA0065B7E5 /* MovieListViewController.swift in Sources */,
 				0429743F2789792B0065B7E5 /* AppDelegate.swift in Sources */,
