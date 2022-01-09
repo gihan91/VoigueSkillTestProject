@@ -21,6 +21,7 @@ class MovieListViewController: UIViewController, Storyboard, UIScrollViewDelegat
         super.viewDidLoad()
         self.setupDelegates()
         self.bindData()
+        self.bindSelectedMovie()
         
     }
     
@@ -46,7 +47,18 @@ class MovieListViewController: UIViewController, Storyboard, UIScrollViewDelegat
             
         }.disposed(by: disposeBag)
         
+        
+        
         self.getMovieList()
+    }
+    
+    private func bindSelectedMovie() {
+        moviesCollection
+                .rx
+                .modelSelected(Search.self)
+                .subscribe(onNext: { (model) in
+                    self.coordinator?.goToMovieInfoVC(imdbTitleId: model.imdbID)
+                }).disposed(by: disposeBag)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize

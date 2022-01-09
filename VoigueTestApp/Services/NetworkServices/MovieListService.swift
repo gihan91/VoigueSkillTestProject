@@ -11,24 +11,25 @@ import Alamofire
 enum MovieListService: APIConfiguration {
     
     case getMovieList(parameters: Parameters)
+    case getMovieListInfo(parameters: Parameters)
     
     var method: HTTPMethod {
         switch self {
-        case .getMovieList:
+        case .getMovieList, .getMovieListInfo:
             return .get
         }
     }
     
     var path: String {
         switch self {
-        case .getMovieList:
+        case .getMovieList, .getMovieListInfo:
             return "/"
         }
     }
     
     var parameters: Parameters? {
         switch self {
-        case .getMovieList:
+        case .getMovieList, .getMovieListInfo:
             return nil
         }
     }
@@ -40,7 +41,7 @@ enum MovieListService: APIConfiguration {
         // HTTP Method
         urlRequest.httpMethod = method.rawValue
         switch self {
-        case .getMovieList(let params):
+        case .getMovieList(let params), .getMovieListInfo(let params):
             urlRequest = try URLEncoding.default.encode(urlRequest, with: params)
         }
         return urlRequest

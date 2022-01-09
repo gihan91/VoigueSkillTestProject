@@ -28,4 +28,11 @@ class MainNavigator: Coordinator {
         navigationController.navigationBar.prefersLargeTitles = true
         navigationController.pushViewController(vc, animated: false)
     }
+    
+    func goToMovieInfoVC(imdbTitleId: String) {
+        let vc = MovieInfoViewController.instantiateMain()
+        vc.coordinator = self
+        vc.movieTitleId = imdbTitleId
+        navigationController.pushViewController(vc, animated: true)
+    }
 }

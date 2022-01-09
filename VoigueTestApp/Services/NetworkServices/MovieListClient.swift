@@ -34,4 +34,8 @@ class MovieListClient {
     static func getMovieList() -> Observable<MovieModel> {
         return request(MovieListService.getMovieList(parameters: ["apikey": "523b6c1c", "s": "Marvel", "type": "movie"]))
     }
+    
+    static func getMovieListInfo(imdbID: String) -> Observable<MovieInfo> {
+        return request(MovieListService.getMovieList(parameters: ["apikey": "523b6c1c", "i": imdbID]))
+    }
 }
